@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1631471650 source:c:\users\lgrei\onedrive\documents\playername\main.c
+	<stdio.h>
+
+1634613025 source:c:\users\lgrei\onedrive\documents\playername\textadventure.c
+	<stdio.h>
+
