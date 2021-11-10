@@ -10,7 +10,7 @@ int main (void)
     int barbarian = 2;
     int assassin = 3;
     int gunslinger = 4;
-    char *playername[256];
+    char playername[256];
     int characterselect; //player input determines class//
     //gunslinger weapon types//
     int pistol = 1;
@@ -40,7 +40,10 @@ int main (void)
     int resilliance;
     int perception;
     int points = 34;//track points available//
-    int skillpoints;//max skill points a player can have//
+    int skillpoints = 0;//max skill points a player can have//
+    //gamestate
+    int gamestate;//keeps track of choices and player attributes
+
 
 
 
@@ -64,7 +67,7 @@ int main (void)
    {
 
         printf("\nTell the voice your name\n");//name select//
-        scanf("%s" , &playername);
+        scanf("%s" , playername);
 
         printf("\nHello %s\n" , playername);
    }
@@ -366,8 +369,6 @@ int main (void)
             printf("\n***********************************************************************************************************************************************\n");
 
             printf("\nEND OF CHARACTER CREATION");
-            printf("\n press 1 to continue\n");
-            scanf("%d");
             printf("\n*****************************************************************************************************************************\n");
             printf("\nCHAPTER 1");
 
